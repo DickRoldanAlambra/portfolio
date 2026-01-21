@@ -9,7 +9,7 @@
           Hi, I'm <span class="text-blue-600 dark:text-blue-400">Dick Roldan Alambra</span>
         </h1>
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          An Information Technology professional specializing in practical, innovative solutions.
+          A Software Engineer specializing in practical, innovative solutions.
           I bridge technology and business needs by building modern web applications that solve real-world problems.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -19,6 +19,13 @@
             <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
+          </a>
+          <a href="/resume.html?print=true" target="_blank"
+            class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+            <svg class="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Resume
           </a>
           <a href="#contact"
             class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
@@ -34,7 +41,7 @@
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            As an Information Technology professional, I focus on practical technology solutions that drive business
+            As a Software Engineer, I focus on practical technology solutions that drive business
             value.
             I specialize in developing and implementing systems that are not just technically sound, but also
             user-friendly and aligned with organizational goals.
@@ -71,7 +78,7 @@
             </div>
             <p class="text-gray-600 dark:text-gray-300">
               I apply IT best practices to deliver reliable, maintainable solutions.
-              My approach combines technical expertise with business acumen—focusing on user needs,
+              My approach combines technical expertise focusing on user needs,
               system efficiency, and long-term sustainability to create technology that makes a real impact.
             </p>
           </div>
@@ -126,14 +133,15 @@
                     {{ tag }}
                   </span>
                 </div>
-                <a :href="project.link"
-                  class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">
-                  View Project
-                  <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
+                <div v-if="project.link && project.link !== '#'" class="flex justify-end">
+                  <a :href="project.link" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -270,35 +278,35 @@ const projects = [
   {
     title: 'EasyPOS',
     description: 'A Point of Sale system designed for small to medium businesses to streamline sales and inventory management.',
-    image: 'https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Project+One',
-    tags: ['.Net', 'WinForms', 'MSSQL', 'C#'],
+    image: '/images/POS.png',
+    tags: ['.Net', 'WinForms', 'MSSQL', 'C#', 'LinQ to SQL'],
     link: '#'
   },
   {
     title: 'NIPT Data Management System',
     description: 'A healthcare application for managing Non-Invasive Prenatal Testing (NIPT) results and customer notifications. I refactored and enhanced a suite of three interconnected web apps, significantly improving performance across Laravel, Angular, and Nuxt.',
-    image: 'https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Project+Two',
+    image: '/images/NIPT.png',
     tags: ['Laravel', 'Nuxt', 'Angular', 'MySQL'],
-    link: '#'
+    link: 'mypage-nipt-reservation.hiro-clinic.or.jp'
   },
   {
     title: 'Berben Logistics',
     description: 'A comprehensive Warehouse Management System (WMS) designed to streamline logistics, inventory tracking, and warehouse operations. I played a key role in maintaining the system and implementing several efficiency-focused features.',
-    image: 'https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Project+Three',
+    image: '/images/BERBEN.png',
     tags: ['Laravel', 'Angular', 'MySQL'],
-    link: '#'
+    link: 'https://berben.human-incubator.com/'
   },
   {
     title: 'Easy Restaurant',
     description: 'A modern digital ordering solution via QR codes. As a core developer, I implemented a robust multi-tenancy architecture using stancl/tenancy and focused on creating an intuitive ordering experience.',
-    image: 'https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Project+Three',
+    image: '/images/EASYRESTAURANT.png',
     tags: ['Laravel', 'Nuxt', 'MySQL'],
-    link: '#'
+    link: 'https://admin-bar-easyquickorder-demo.hiro-test.net/login'
   },
   {
     title: 'Scraping Service',
     description: 'A web scraping service that collects data from various online sources for market analysis.',
-    image: 'https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Project+Three',
+    image: '/images/GEAR.png',
     tags: ['Laravel', 'Python', 'Selenium'],
     link: '#'
   }
