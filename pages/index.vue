@@ -270,7 +270,7 @@ const skills = [
   {
     icon: GitIcon,
     title: 'Version Control',
-    description: 'Git, GitHub, GitLab, Code Review'
+    description: 'Git, GitHub, Code Review'
   }
 ]
 
