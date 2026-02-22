@@ -122,7 +122,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="project in projects" :key="project.title"
             class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
-            <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" @error="handleImageError" />
+            <img :src="project.image" :alt="project.title" class="w-full h-52 object-cover object-center block hover:scale-105 transition-transform" @error="handleImageError" />
             <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{{ project.title }}</h3>
               <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">{{ project.description }}</p>
