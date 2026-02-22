@@ -8,10 +8,10 @@
         <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
           Hi, I'm <span class="text-blue-600 dark:text-blue-400">Dick Roldan Alambra</span>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          A Software Engineer specializing in practical, innovative solutions.
-          I bridge technology and business needs by building modern web applications that solve real-world problems.
-        </p>
+        <div class="flex flex-col mb-4 sm:flex-row gap-4 justify-center">
+          <p class="text-md dark:text-gray-300 max-w-3xl">Email: dickroldan.alambra@gmail.com</p>
+          <p class="text-md dark:text-gray-300 max-w-3xl">Contact #: 0920-491-4403</p>
+        </div>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#projects"
             class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
@@ -255,12 +255,12 @@ const skills = [
   {
     icon: CodeIcon,
     title: 'Frontend Development',
-    description: 'Vue.js, Nuxt, WinForms, Angular, TypeScript, Tailwind CSS'
+    description: 'VueJS, NuxtJS, WinForms, Angular, TypeScript, Tailwind CSS'
   },
   {
     icon: ServerIcon,
     title: 'Backend Development',
-    description: 'Node.js, Laravel, PHP, C#, REST APIs'
+    description: 'Laravel, PHP, C#, REST APIs'
   },
   {
     icon: DatabaseIcon,
@@ -288,13 +288,6 @@ const projects = [
     image: '/images/NIPT.png',
     tags: ['Laravel', 'Nuxt', 'Angular', 'MySQL'],
     link: 'mypage-nipt-reservation.hiro-clinic.or.jp'
-  },
-  {
-    title: 'Berben Logistics',
-    description: 'A comprehensive Warehouse Management System (WMS) designed to streamline logistics, inventory tracking, and warehouse operations. I played a key role in maintaining the system and implementing several efficiency-focused features.',
-    image: '/images/BERBEN.png',
-    tags: ['Laravel', 'Angular', 'MySQL'],
-    link: 'https://berben.human-incubator.com/'
   },
   {
     title: 'Easy Restaurant',
