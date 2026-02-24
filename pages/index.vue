@@ -227,22 +227,6 @@ const DatabaseIcon = {
   `
 }
 
-const CloudIcon = {
-  template: `
-    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-    </svg>
-  `
-}
-
-const MobileIcon = {
-  template: `
-    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-    </svg>
-  `
-}
-
 const GitIcon = {
   template: `
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -260,7 +244,7 @@ const skills = [
   {
     icon: ServerIcon,
     title: 'Backend Development',
-    description: 'Laravel, PHP, REST APIs'
+    description: 'Laravel, PHP, REST APIs,ASP.NET Core, Selenium, LINQ to SQL'
   },
   {
     icon: DatabaseIcon,
@@ -281,6 +265,13 @@ const projects = [
     image: '/images/POS.png',
     tags: ['.Net', 'WinForms', 'MSSQL', 'LinQ to SQL'],
     link: '#'
+  },
+   {
+    title: 'EasyFS',
+    description: 'A Software-As-A-Service (SAAS) sales, inventory and Accounting system designed for Micro, Small and Medium (MSME) Enterprises.',
+    image: '/images/EASYFS.png',
+    tags: ['ASP.NET Core Web API','MSSQL', 'LinQ to SQL', 'Angular', 'Tailwind CSS'],
+    link: 'https://preprod.easyfs.ph/security'
   },
   {
     title: 'NIPT Data Management System',
