@@ -260,7 +260,7 @@ const skills = [
   {
     icon: ServerIcon,
     title: 'Backend Development',
-    description: 'Laravel, PHP, C#, REST APIs'
+    description: 'Laravel, PHP, REST APIs'
   },
   {
     icon: DatabaseIcon,
@@ -279,7 +279,7 @@ const projects = [
     title: 'EasyPOS',
     description: 'A Point of Sale system designed for small to medium businesses to streamline sales and inventory management.',
     image: '/images/POS.png',
-    tags: ['.Net', 'WinForms', 'MSSQL', 'C#', 'LinQ to SQL'],
+    tags: ['.Net', 'WinForms', 'MSSQL', 'LinQ to SQL'],
     link: '#'
   },
   {
